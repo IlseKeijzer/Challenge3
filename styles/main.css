@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+body {
+  margin: 5vh 5vw;
+
+  background: #9b9fb2; /* Old browsers */
+  background: -moz-linear-gradient(top, #F2F2F2 0%, #FFC04C 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #F2F2F2 0%, #FFC04C 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #F2F2F2 0%, #FFC04C 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  display: grid;
+  grid-gap: 2vh;
+  grid-template-areas:
+  	"map"
+  	"weather"
+  	"info";
+
+}
+#map {
+	grid-area: map;
+	height: 50vh;
+  	width: 90vw;
+}
+#weather{
+	grid-area: weather;
+	height: auto;
+  	background-color: white;
+
+  	font-family: 'Raleway';
+  	font-size: 2vh;
+  	padding: 4vw;
+}
+#weatherIcon{
+	width: auto;
+	height: 15vh;
+	display: block;
+    margin: 0 auto;
+}
+#weather p{
+	font-weight: bold;
+	text-align: center;
+}
+#info{
+	grid-area: info;
+	height: auto;
+  	width: 82vw;
+  	background-color: white;
+
+  	font-family: 'Raleway';
+  	font-size: 2vh;
+  	padding: 4vw;
+}
+p{
+	width: auto;
+}
+img{
+	margin: 0 auto;
+	width: 99%;
+	height: auto;
+}
+
+@media only screen and (min-width: 600px){
+	body{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+  		grid-gap: 2vh;
+		grid-template-areas:
+		  	"map map"
+		  	"weather info";
+	}
+	#map {
+		grid-area: map;
+		height: 50vh;
+	  	width: 90vw;
+	}
+	#weather{
+		grid-area: weather;
+		height: 36vh;
+	  	width: 40vw;
+	  	padding: 2vw;
+	}
+	#info{
+		grid-area: info;
+		height: 36vh;
+	  	width: 40vw;
+	  	padding: 2vw;
+	}
+	p{
+		width: auto;
+	}
+	img{
+		margin: 0 auto;
+		width: 99%;
+		max-width: 400px;
+		height: auto;
+		max-height: 120px;
+	}
+}
+
+@media only screen and (min-width: 850px){
+	body{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+  		grid-gap: 2vh;
+		grid-template-areas:
+		  	"map weather"
+		  	"map info";
+	}
+	#map {
+		grid-area: map;
+		height: 90vh;
+	  	width: 45vw;
+	}
+	#weather{
+		grid-area: weather;
+		height: 39vh;
+	  	width: 40vw;
+	}
+	#info{
+		grid-area: info;
+		height: 39vh;
+	  	width: 40vw;
+	  	font-size: 2vh;
+	}
+	img{
+		margin: 0 auto;
+		width: 99%;
+		max-width: 450px;
+		height: auto;
+		max-height: 150px;
+	}
+}
+
+@media only screen and (min-width: 1000px){
+	body{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+  		grid-gap: 2vh;
+		grid-template-areas:
+		  	"map weather"
+		  	"map info";
+	}
+	#map {
+		grid-area: map;
+		height: 90vh;
+	  	width: 55vw;
+	}
+	#weather{
+		grid-area: weather;
+		height: 38vh;
+	  	width: 30vw;
+	}
+	#info{
+		grid-area: info;
+		height: 38vh;
+	  	width: 30vw;
+	}
+	img{
+		margin: 0 auto;
+		width: 99%;
+		max-width: 450px;
+		height: auto;
+		max-height: 135px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
