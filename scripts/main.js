@@ -60,7 +60,7 @@ map.on('load', function () {
     
     function getAPIdata() {
 
-      var url = 'http://api.openweathermap.org/data/2.5/weather';
+      var url = 'https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather';
       var apiKey = 'd5f739d90c88a68cb8b29f0a686ef15f';
       var lat = e.features[0].geometry.coordinates[1]; //latitude van locatie waarop geklikt wordt
       var lon = e.features[0].geometry.coordinates[0]; //longitude van locatie waarop geklikt wordt
